@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noriko Taniguchi | studio N</title>
+    <link rel="shortcut icon" href ="images/favicon.ico">
+    <link rel="stylesheet" href="./css/stylejp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <a class="header__logo-link" href="./index.html">
+                    <img src="./images/logo_sm_no_background.png" alt="header logo" class="header__logo">
+                </a>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="./index.html" class="header__link">HOME</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#about" class="header__link">ABOUT</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#projects" class="header__link">PROJECTS</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#contact" class="header__link">CONTACT</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <img src="./images/globe-white.svg" class="header__language-globe" alt="globe image">
+                        <div class="header__language">
+                            <div class="header__select-box">JAPANESE</div>
+                            <ul class="header__options" onchange="location.href=value" name="language-menu" id="language">
+                                <li value="index.html" class="header__option">
+                                    <a href="./index.html" class="header__option-anchor">ENGLISH</a>
+                                </li>
+                                <li value="indexjp.html" class="header__option">
+                                    <a href="./indexjp.html" class="header__option-anchor">JAPANESE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img 
+                        src="./images/hamburger_menu.svg" 
+                        alt="hamburger menu" 
+                        class="header__main-ham-menu">
+                    <img 
+                        src="./images/hamburger_menu_close.svg" 
+                        alt="hamburger menu close" 
+                        class="header__main-ham-menu-close d-none">
+                </div>
+            </div>
+        </div>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html" class="header__sm-menu-anchor">HOME</a>
+                    </li>
+                    <hr>
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#sm-menu-about" class="header__sm-menu-anchor">ABOUT</a>
+                    </li>
+                    <hr>
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#sm-menu-projects" class="header__sm-menu-anchor">PROJECTS</a>
+                    </li>
+                    <hr>
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#sm-menu-contact" class="header__sm-menu-anchor">CONTACT</a>
+                    </li>
+                    <hr>
+                    <li class="header__sm-menu-link">
+                        <img src="./images/globe-white.svg" class="header__sm-language-globe" alt="globe image">
+                        <div class="header__sm-language">
+                            <div class="header__sm-select-box">JAPANESE</div>
+                            <ul class="header__sm-options" onchange="location.href=value" name="language-menu" id="language">
+                                <li value="index.html" class="header__sm-option">
+                                    <a href="./index.html" class="header__sm-option-anchor">ENGLISH</a>
+                                </li>
+                                <li value="indexjp.html" class="header__sm-option">
+                                    <a href="./indexjp.html" class="header__sm-option-anchor">JAPANESE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home__content">
+            <img src="./images/logo_sm_no_background.png" alt="main logo" class="home__logo">
+            <span id="sm-menu-about"></span>
+        </div>
+    </section>
+    <section id="about" class="about__section">
+        <div class="about__about-container">
+            <div class="about__about-content">
+                <h2 class="about__about-title">ABOUT MYSELF</h2>
+                <hr class="orange-line">
+                <p class="about__about-paragraph">
+                    鹿児島出身、宮崎育ちのフルスタックエンジニアです。<br>
+                    HTML、CSS、JavaScript、React、Next.JS、PostgreSQL等で開発を行っています。<br>
+                    ウェブサイトやウェブアプリケーションを通して、
+                    最高のユーザーエクスペリエンスを提供することを心掛けています。
+                </p>
+            </div>
+            <div class="about__kagoshima-mobile">
+                <img src="./images/kagoshima.jpeg" alt="kagoshima image" class="about__kagoshima-image">
+            </div>
+            <div class="about__base-content">
+                <h2 class="about__base-title">WHERE I AM BASED</h2>
+                <hr class="orange-line">
+                <p class="about__base-paragraph">
+                    現在は鹿児島とカナダのトロントを拠点に、フリーランスとして活動しています。<br>
+                    日本語と英語の両言語でのウェブサイト作成が可能です。
+                </p>
+                <span id="sm-menu-projects"></span>
+            </div>
+        </div>
+        
+    </section>
+    <section id="projects" class="projects__section">
+        <div class="projects__container">
+            <div class="projects__toronto-mobile">
+                <img src="./images/Toronto.jpeg" alt="toronto image" class="projects__toronto-image">
+            </div>
+            <div class="projects__content">
+                <h2 class="projects__title">PROJECTS</h2>
+                <hr class="orange-line">
+                <div class="projects__project1">
+                    <h4 class="projects__project-title">&lt;ONLINE RESUME /&gt;</h4>
+                    <p class="projects__project-detail">HTMLとCSSのみで作成したオンライン履歴書（英語）</p>
+                    <button class="projects__link-button">
+                        <a href="https://noriko251.github.io/resume/"
+                            class="projects__button-anchor" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            PROJECT LINK
+                        </a>
+                    </button>
+                </div>
+                <div class="projects__project2">
+                    <h4 class="projects__project-title">&lt;To-Do List /&gt;</h4>
+                    <p class="projects__project-detail">EJS、JavaScript、CSS、Passport.js、PostgreSQLを使用し作成したTo-Doリストウェブアプリ</p>
+                    <button class="projects__link-button">
+                        <a href="https://todolist-xrbw.onrender.com/"
+                            class="projects__button-anchor" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            PROJECT LINK
+                        </a>
+                    </button>
+                </div>
+                <div class="projects__project3">
+                    <h4 class="projects__project-title">&lt;Coffee Shop Demo Website /&gt;</h4>
+                    <p class="projects__project-detail">Nextjs、CSS Modules、MongoDBを使用し作成した、Vercelにデプロイした私の妄想カフェウェブサイト</p>
+                    <button class="projects__link-button">
+                        <a href="https://lakeshorecoffee-demo.vercel.app/"
+                            class="projects__button-anchor" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            PROJECT LINK
+                        </a>
+                    </button>
+                </div>
+                <span id="sm-menu-contact"></span>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact__section">
+        <div class="contact__container">
+            <h2 class="contact__title">CONTACT</h2>
+            <hr class="orange-line">
+            <div class="contact__form-container">
+                <form name="contact" method="POST" data-netlify="true" onSubmit="submit" 
+                    data-netlify-honeypot="bot-field" class="contact__form">
+                    <input class="d-none" name="bot-field">
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="name">Name</label>
+                        <input 
+                            required
+                            autocomplete="off"
+                            placeholder="Enter Your Name" 
+                            type="text" 
+                            class="contact__form-input"
+                            name="name"
+                            id="name" 
+                        />
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="email">Email</label>
+                        <input 
+                            required 
+                            autocomplete="off"
+                            placeholder="Enter Your Email" 
+                            type="text" 
+                            class="contact__form-input"
+                            name="email"
+                            id="email" 
+                        />
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="message">Message</label>
+                        <textarea 
+                            required 
+                            autocomplete="off"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter Your Message" 
+                            class="contact__form-input"
+                            name="message"
+                            id="message" 
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="contact__submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__content">
+            <a class="footer__logo-link" href="./index.html">
+                <img src="./images/logo_sm_no_background.png" alt="footer logo" class="footer__logo">
+            </a>
+            <p class="copyright">© 2024 Noriko Taniguchi</p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
