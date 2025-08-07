@@ -346,7 +346,8 @@ body {
 
 .about__section {
   background-image: url(../images/kagoshima.jpeg);
-  background-size: 100%;
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   padding-top: 8%;
   padding-bottom: 48%;

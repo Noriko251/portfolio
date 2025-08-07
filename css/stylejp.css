@@ -394,7 +394,7 @@ body {
 @media only screen and (max-width: 767px) {
   .about__about-content {
     width: 21rem;
-    height: 20vh;
+    height: 28vh;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -486,6 +486,14 @@ body {
 @media only screen and (max-width: 960px) {
   .about__section p {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .resume__link-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
