@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0 1rem 0 0;
 }
 @media only screen and (max-width: 767px) {
@@ -37,11 +37,11 @@ body {
   width: 15rem;
   margin-left: 0;
   filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.5));
-  transform: translateZ(0px);
 }
 @media only screen and (max-width: 960px) {
   .header__logo {
     width: 13em;
+    margin-top: 0.5rem;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -71,6 +71,10 @@ body {
   border-right: 1px solid #fff;
   display: flex;
   align-items: center;
+}
+
+.header__link-wrapper:last-child {
+  border-right: none;
 }
 
 .header__link {
@@ -311,7 +315,7 @@ body {
   padding-top: 2.5rem;
 }
 @media only screen and (max-width: 767px) {
-  .home__content {
+  .home {
     background: rgba(57, 65, 131, 1);
     padding-top: 4rem;
   }
@@ -394,7 +398,7 @@ body {
 @media only screen and (max-width: 767px) {
   .about__about-content {
     width: 21rem;
-    height: 28vh;
+    height: auto;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -419,6 +423,7 @@ body {
   .projects__title {
     color: #394183;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -453,7 +458,7 @@ body {
 @media only screen and (max-width: 767px) {
   .about__base-content {
     width: 21rem;
-    height: 20vh;
+    height: auto;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -485,7 +490,7 @@ body {
 }
 @media only screen and (max-width: 960px) {
   .about__section p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -501,15 +506,29 @@ body {
   margin: 0.8rem 0;
   background: #fa6500;
   color: #fa6500;
-  font-family: "Nunito", sans-serif;
+  border: solid;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
+}
+.resume__link-button:hover {
+  transform: translateY(-3px);
+}
+@media only screen and (max-width: 767px) {
+  .resume__link-button {
+    display: flex;
+    margin: 1.5rem 0;
+  }
+}
+
+.resume__button-anchor {
+  font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 12px;
-  letter-spacing: 2px;
-  border-radius: 5px;
-  border: solid;
-  box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 16px;
+  padding: 0.4rem;
+  text-decoration: none;
 }
 
 .projects__section {
@@ -531,73 +550,6 @@ body {
   z-index: 40;
   margin-top: -120px;
 }
-/* @media only screen and (max-width: 1722px) {
-  .projects__section {
-    padding-bottom: 33%;
-  }
-}
-@media only screen and (max-width: 1578px) {
-  .projects__section {
-    padding-bottom: 31%;
-  }
-}
-@media only screen and (max-width: 1459px) {
-  .projects__section {
-    padding-bottom: 29%;
-  }
-}
-@media only screen and (max-width: 1357px) {
-  .projects__section {
-    padding-bottom: 27%;
-  }
-}
-@media only screen and (max-width: 1265px) {
-  .projects__section {
-    padding-bottom: 25%;
-  }
-}
-@media only screen and (max-width: 1190px) {
-  .projects__section {
-    padding-bottom: 23%;
-  }
-}
-@media only screen and (max-width: 1126px) {
-  .projects__section {
-    padding-bottom: 21%;
-  }
-}
-@media only screen and (max-width: 1090px) {
-  .projects__section {
-    background-size: 120%;
-    background-position: center top;
-    padding-bottom: 35%;
-  }
-}
-@media only screen and (max-width: 1077px) {
-  .projects__section {
-    padding-bottom: 33%;
-  }
-}
-@media only screen and (max-width: 1017px) {
-  .projects__section {
-    padding-bottom: 30.5%;
-  }
-}
-@media only screen and (max-width: 885px) {
-  .projects__section {
-    padding-bottom: 29%;
-  }
-}
-@media only screen and (max-width: 851px) {
-  .projects__section {
-    padding-bottom: 26.5%;
-  }
-}
-@media only screen and (max-width: 799px) {
-  .projects__section {
-    padding-bottom: 24.5%;
-  }
-} */
 @media only screen and (max-width: 767px) {
   .projects__section {
     background-image: none;
@@ -612,7 +564,7 @@ body {
   opacity: 0;
   display: none;
   position: relative;
-  width: 0%;
+  width: 100%;
   z-index: 40;
 }
 @media only screen and (max-width: 767px) {
@@ -620,7 +572,6 @@ body {
     display: block;
     visibility: visible;
     opacity: 1;
-    width: 100%;
   }
 }
 
@@ -639,7 +590,7 @@ body {
 }
 @media only screen and (max-width: 960px) {
   .projects__section p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -686,7 +637,7 @@ body {
 .projects__project-title {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
   font-style: bold;
   color: #fff;
   margin-bottom: 0;
@@ -699,17 +650,12 @@ body {
 }
 
 .projects__link-button {
-  margin-bottom: 0.5rem;
-  background-color: #fa6500;
-  border-color: #fa6500;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 2px;
+  margin: 0.8rem 0;
+  background: #fa6500;
+  color: #fa6500;
   border-radius: 5px;
+  border: solid;
+  box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
 }
 .projects__link-button:hover {
   transform: translateY(-3px);
@@ -724,13 +670,13 @@ body {
 .projects__button-anchor {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 2px;
-  padding: 0.4rem;
   text-decoration: none;
+  padding: 0.2rem;
 }
 
 .projects__project-detail {
@@ -771,12 +717,12 @@ body {
       rgba(73, 73, 143, 1) 50%,
       rgba(237, 185, 169, 1) 90%
     );
-    padding-bottom: 50%;
+    padding-bottom: 40%;
   }
 }
 
 .contact__title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #fff;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 400;
@@ -821,8 +767,8 @@ body {
 }
 
 .contact__form-input {
-  background-color: #f0f0f0;
-  opacity: 0.6;
+  background-color: #fff;
+  opacity: 0.8;
   padding: 1rem;
   border-radius: 5px;
   font-family: "Nunito", sans-serif;
@@ -854,6 +800,8 @@ body {
   letter-spacing: 1px;
   border-color: #fa6500;
   border-radius: 5px;
+  border: none;
+  box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 footer {

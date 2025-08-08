@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   margin: 0 1rem 0 0;
 }
 @media only screen and (max-width: 767px) {
@@ -71,6 +71,10 @@ body {
   border-right: 1px solid #fff;
   display: flex;
   align-items: center;
+}
+
+.header__link-wrapper:last-child {
+  border-right: none;
 }
 
 .header__link {
@@ -394,7 +398,7 @@ body {
 @media only screen and (max-width: 767px) {
   .about__about-content {
     width: 21rem;
-    height: 20vh;
+    height: auto;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -419,6 +423,7 @@ body {
   .projects__title {
     color: #394183;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -453,12 +458,16 @@ body {
 @media only screen and (max-width: 767px) {
   .about__base-content {
     width: 21rem;
-    height: 20vh;
+    height: auto;
     display: grid;
     align-items: center;
     justify-content: center;
     margin: 3rem auto;
   }
+}
+
+.orange-line-wrapper {
+  text-align: center;
 }
 
 .orange-line {
@@ -485,7 +494,7 @@ body {
 }
 @media only screen and (max-width: 960px) {
   .about__section p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -501,15 +510,30 @@ body {
   margin: 0.8rem 0;
   background: #fa6500;
   color: #fa6500;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  letter-spacing: 2px;
   border-radius: 5px;
   border: solid;
   box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
+}
+.resume__link-button:hover {
+  transform: translateY(-3px);
+}
+@media only screen and (max-width: 767px) {
+  .resume__link-button {
+    display: flex;
+    margin: 0.8rem 0;
+  }
+}
+
+.resume__button-anchor {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 0.2rem;
+  text-decoration: none;
 }
 
 .projects__section {
@@ -574,7 +598,7 @@ body {
 }
 @media only screen and (max-width: 960px) {
   .projects__section p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -629,7 +653,7 @@ body {
 .projects__project-title {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
   font-style: bold;
   color: #fff;
   margin-bottom: 0;
@@ -641,16 +665,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .projects__link-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .projects__link-button {
-  margin-bottom: 0.5rem;
+  margin: 0.8rem 0;
   background: #fa6500;
   color: #fa6500;
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  letter-spacing: 2px;
   border-radius: 5px;
   border: solid;
   box-shadow: 2px 3px 4px -1px rgba(0, 0, 0, 0.4);
@@ -661,20 +687,21 @@ body {
 @media only screen and (max-width: 767px) {
   .projects__link-button {
     display: flex;
-    margin: auto;
+    margin: 0 0 2rem 0;
+    /* margin-bottom: 2rem; */
   }
 }
 
 .projects__button-anchor {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 2px;
-  padding: 0.4rem;
   text-decoration: none;
+  padding: 0.2rem;
 }
 
 .projects__project-detail {
@@ -720,7 +747,7 @@ body {
 }
 
 .contact__title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #fff;
   font-family: "Barlow Semi Condensed", sans-serif;
   font-weight: 400;
@@ -735,9 +762,9 @@ body {
   }
 }
 
-.contact__section .orange-line {
+/* .contact__section .orange-line {
   display: flex;
-}
+} */
 
 .contact__container {
   display: grid;
@@ -765,8 +792,8 @@ body {
 }
 
 .contact__form-input {
-  background-color: #f0f0f0;
-  opacity: 0.6;
+  background-color: #fff;
+  opacity: 0.8;
   padding: 1rem;
   border-radius: 5px;
   font-family: "Nunito", sans-serif;
