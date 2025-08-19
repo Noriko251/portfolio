@@ -505,6 +505,10 @@ body {
 }
 
 .resume__link-button {
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.8rem 0;
   background: #fa6500;
   color: #fa6500;
@@ -653,6 +657,10 @@ body {
 }
 
 .projects__link-button {
+  width: 9.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.8rem 0;
   background: #fa6500;
   color: #fa6500;
